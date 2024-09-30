@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPageRockyMountainRoofing</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+        .background {
+            position: relative; /* Change to relative */
+            display: block; /* Ensures the image behaves like a block element */
+            max-width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 80px; /* Move images slightly more to the right */
+        }
+        .link {
+            position: absolute;
+            top: 5px; /* Moved slightly higher */
+            right: 480px; /* Adjusted to move the link further to the right */
+            z-index: 1; /* Ensure the link is above the image */
+            font-size: 16px; /* Smaller font size */
+            color: white; /* Set text color for visibility */
+            text-decoration: none; /* Remove underline from the link */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+            padding: 5px 10px; /* Smaller padding */
+            border-radius: 3px; /* Optional: smaller rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <!-- First image (pic1) -->
+    <img class="background" src="pic1.jpg" alt="First Image">
+    
+    <!-- Second image (pic2) placed below the first -->
+    <img class="background" src="pic2.jpg" alt="Second Image" style="margin-top: -20px;">
+    
+    <!-- Link on top of the image -->
+    <a class="link" href="https://www.rockymountainroofing.com" target="_blank">Click Here for Official Website</a>
+</body>
+</html>
