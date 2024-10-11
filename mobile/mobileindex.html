@@ -8,19 +8,20 @@
         html, body {
             height: 100%;
             margin: 0;
-            overflow-y: auto; /* Enable vertical scrolling */
+            overflow-y: scroll; /* Enable vertical scrolling */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         .background {
             width: 100vw;
             height: 100vh;
             background-size: cover; /* Cover the entire viewport */
             background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent repeat */
+            background-repeat: no-repeat; /* No repeat */
         }
-        .background1 {
+        #image1 {
             background-image: url('images/pic1.jpg'); /* First image */
         }
-        .background2 {
+        #image2 {
             background-image: url('images/pic2.jpg'); /* Second image */
         }
         .link {
@@ -38,11 +39,11 @@
     </style>
 </head>
 <body>
-    <!-- First image fills the entire viewport -->
-    <div class="background background1"></div>
+    <!-- First image -->
+    <div id="image1" class="background"></div>
     
-    <!-- Second image fills the entire viewport and is stacked below -->
-    <div class="background background2"></div>
+    <!-- Second image below -->
+    <div id="image2" class="background"></div>
 
     <!-- Link on top of the first image -->
     <a class="link" href="https://www.rockymountainroofing.com" target="_blank">Click Here for Official Website</a>
