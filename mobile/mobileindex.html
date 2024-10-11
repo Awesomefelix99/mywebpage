@@ -12,17 +12,17 @@
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         .background {
-            width: 100vw;
-            height: 100vh;
-            background-size: 150%; /* Zoom in by making the background 150% of the viewport */
-            background-position: center; /* Center the zoomed image */
-            background-repeat: no-repeat;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            background-size: cover; /* Scale the image to cover the entire area */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent image from repeating */
         }
         #image1 {
-            background-image: url('images/pic1.jpg');
+            background-image: url('images/pic1.jpg'); /* First image */
         }
         #image2 {
-            background-image: url('images/pic2.jpg');
+            background-image: url('images/pic2.jpg'); /* Second image */
         }
         .link {
             position: absolute;
