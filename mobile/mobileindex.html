@@ -12,11 +12,12 @@
         }
         .background {
             position: relative;
-            width: 100vw; /* Full viewport width */
-            height: 100vh; /* Full viewport height */
-            background-image: url('images/pic1.jpg'); /* Replace with the correct path */
-            background-size: cover; /* Make the image cover the entire viewport */
+            width: 100vw;
+            height: 100vh;
+            background-image: url('images/pic1.jpg');
+            background-size: contain; /* Ensure the entire image fits in the viewport */
             background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating */
         }
         .link {
             position: absolute;
