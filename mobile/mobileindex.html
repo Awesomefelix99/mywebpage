@@ -8,36 +8,32 @@
         html, body {
             height: 100%;
             margin: 0;
-            overflow-x: hidden; /* Hide horizontal scrollbar */
-            overflow-y: auto; /* Allow vertical scrolling */
+            overflow: hidden; /* Prevent scrolling */
         }
         .background {
-            position: relative; /* Change to relative */
-            display: block; /* Ensures the image behaves like a block element */
-            max-width: 100%; /* Make image responsive */
-            height: auto; /* Maintain aspect ratio */
-            margin-left: 100px; /* Adjusted to move images significantly to the right */
+            position: relative;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            background-image: url('images/pic1.jpg'); /* Replace with the correct path */
+            background-size: cover; /* Make the image cover the entire viewport */
+            background-position: center; /* Center the image */
         }
         .link {
             position: absolute;
-            top: 5px; /* Moved slightly higher */
-            right: 480px; /* Adjusted to move the link further to the right */
-            z-index: 1; /* Ensure the link is above the image */
-            font-size: 16px; /* Smaller font size */
-            color: white; /* Set text color for visibility */
-            text-decoration: none; /* Remove underline from the link */
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
-            padding: 5px 10px; /* Smaller padding */
-            border-radius: 3px; /* Optional: smaller rounded corners */
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 3px;
         }
     </style>
 </head>
 <body>
-    <!-- First image for mobile -->
-    <img class="background" src="images/pic1.jpg" alt="First Image">
-    
-    <!-- Second image for mobile -->
-    <img class="background" src="images/pic2.jpg" alt="Second Image" style="margin-top: -20px;">
+    <div class="background"></div>
     
     <!-- Link on top of the image -->
     <a class="link" href="https://www.rockymountainroofing.com" target="_blank">Click Here for Official Website</a>
