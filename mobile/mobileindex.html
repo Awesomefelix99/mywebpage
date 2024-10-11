@@ -8,14 +8,14 @@
         html, body {
             height: 100%;
             margin: 0;
-            overflow: hidden; /* Prevent scrolling */
+            overflow: auto; /* Allow scrolling */
         }
         .background {
             position: relative;
-            width: 100vw;
-            height: 100vh;
+            min-width: 100vw;
+            min-height: 100vh;
             background-image: url('images/pic1.jpg');
-            background-size: 100% 100%; /* Stretch the image to fit the entire viewport */
+            background-size: cover; /* Make sure it covers the viewport */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Prevent repeating */
         }
